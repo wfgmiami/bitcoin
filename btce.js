@@ -1,17 +1,3 @@
-/**
- * Node.js BTC-E Trading API
- * https://btc-e.com/api/documentation
- *
- * Version: 0.4.2
- * Author : petermrg <petermrg@ymail.com>
- * gitHub : https://github.com/petermrg/node-btce
- *
- * Donate:
- * BTC: 1GVRSmJzZpFoLvFnPNtdwPeVXh6t4t65PZ
- * LTC: LWSRwTDKVxE9BGziUzbUw7MkHz6KACVnAA
- *
- * Want new features?, just ask me!
- */
 
 var https = require('https')
 var url = require('url')
@@ -332,6 +318,7 @@ BTCE.prototype.ticker = function(params, callback) {
   var url = this.urlGet+params.pair+'/ticker'
 
   this.getHTTPS(url, callback)
+
 }
 
 /**

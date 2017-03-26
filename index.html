@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>btce</title>
+  <link href="/vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet"></link>
+  <script src='/vendors/jquery/dist/jquery.min.js'></script>
+ <!-- <script src= '/public/app.js' defer></script> -->
+</head>
+
+<body>
+<div class="container">
+  <h2>BTC-E</h2>
+  <div class='row'>
+
+      <div class="col-sm-6" id="ticker">
+        <h4>Ticker</h4>
+
+        <form method="GET" class="form-group" action="/ticker">
+          <div class="list-group">
+
+          <input class="form-group-item" name="pair" placeholder="btc_usd"></input>
+          </div>
+          <button class="btn btn-primary">Get Data</button>
+        </form>
+
+      </div>
+
+      <div class="col-sm-6" id="info">
+         <h4>Info</h4>
+        <form method="GET" class="form-group">
+          <input class="form-control" type="text"></input><br/>
+          <button class="btn btn-primary">Get Data</button>
+        </form>
+      </div>
+  </div>
+
+</div>
+
+</body>
+</html>

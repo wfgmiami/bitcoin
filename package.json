@@ -4,7 +4,8 @@
   "description": "BTC-E Trading API",
   "main": "btce.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,10 @@
   "gitHead": "2497dc25839ccf43c69ff0f707b3e0faf3f38885",
   "bugs": {
     "url": "https://github.com/petermrg/node-btce/issues"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "jquery": "^3.2.1"
   }
 }
